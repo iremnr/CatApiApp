@@ -3,7 +3,7 @@ package com.example.catapiapp.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Cat(
+data class NewCatModelItem(
     @SerializedName("height")
     val height: Int?,
     @SerializedName("id")

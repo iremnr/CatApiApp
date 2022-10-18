@@ -3,7 +3,7 @@ package com.example.catapiapp.ui
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.catapiapp.model.Cat
+import com.example.catapiapp.model.NewCatModel
 import com.example.catapiapp.utils.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -12,7 +12,7 @@ import javax.inject.Inject
 @HiltViewModel
 class ObserveViewModel @Inject constructor(private val repository: ObserveRepository) : ViewModel() {
 
-    val cat: MutableLiveData<Cat?> = MutableLiveData()
+    val cat: MutableLiveData<NewCatModel?> = MutableLiveData()
     val isLoading: MutableLiveData<Boolean> = MutableLiveData(true)
     val onError: MutableLiveData<String?> = MutableLiveData()
 
